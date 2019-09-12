@@ -1,0 +1,5 @@
+package com.sgic.dto;
+
+public class User {
+
+}

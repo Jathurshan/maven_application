@@ -1,0 +1,11 @@
+package com.sgic.controller;
+
+import org.springframework.web.servlet.ModelAndView;
+
+public class ObjectController {
+	
+	public ModelAndView sendObject() {
+		ModelAndView modalandview = new ModelAndView();
+	}
+
+}

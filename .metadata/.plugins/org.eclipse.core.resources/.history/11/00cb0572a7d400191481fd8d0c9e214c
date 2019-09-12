@@ -1,0 +1,33 @@
+package com.sgic;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class Test {
+	public static void main(String [] args) {
+		List<Defect> defectList1 = new ArrayList<>();
+		List<Defect> defectList2 = new LinkedList<>();
+		
+		Defect defect1 = new Defect("login not work!", "HIGH","HIGH");
+		Defect defect2 = new Defect("Unable to delete!", "HIGH","LOW");
+		Defect defect3 = new Defect("update button not working", "HIGH","LOW");
+		
+		defectList1.add(defect1);
+		defectList1.add(defect2);
+		defectList1.add(defect3);
+		
+		Project project1 = new Project(defectList1);
+		
+		defectList2.add(defect1);
+		defectList2.add(defect2);
+		defectList2.add(defect3);
+		
+		Project project2 = new Project(defectList2);
+		
+		for(Defect def : defectList1) {
+			System.out.println(def);
+		}
+		
+	}
+}

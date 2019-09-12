@@ -1,0 +1,20 @@
+package com.sgic;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Project {
+	
+	public static void main(String [] args) {
+		List<Defect> defectList = new ArrayList<>();
+		
+		Defect defect1 = new Defect("login not work!", "HIGH","HIGH");
+		Defect defect2 = new Defect("Unable to delete!", "HIGH","LOW");
+		Defect defect3 = new Defect("update button not working", "HIGH","LOW");
+		
+		defectList.add(defect1);
+		defectList.add(defect2);
+		defectList.add(defect3);
+	}
+
+}

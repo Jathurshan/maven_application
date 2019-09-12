@@ -1,0 +1,8 @@
+package com.sgic.dto;
+
+public class Employee {
+	private int id;
+	priavate String name;
+	private String salary;
+
+}
